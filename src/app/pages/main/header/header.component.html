@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Welcome {{currentUser.userName}}</a>
+      <form class="d-flex input-group w-auto">
+
+        <button id="bbtn" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)="onLogout()">Logout</button>
+        
+      </form>
+    </div>
+  </nav>

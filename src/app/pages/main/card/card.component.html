@@ -1,0 +1,8 @@
+<div class="card-container">
+  <div class="card" *ngFor="let card of cardsservice.cardsList">
+      <img [src]="card.imageUrl" alt="{{ card.name }}">
+      <h3>{{ card.name }}</h3>
+      <p>{{ card.occupation }}</p>
+      <button class="delete-btn" (click)="deleteCard(card.id)">Delete</button>  <!-- Delete Button -->
+  </div>
+</div>
