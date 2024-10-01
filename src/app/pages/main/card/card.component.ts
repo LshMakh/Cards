@@ -20,11 +20,12 @@ export class CardComponent implements OnInit {
   }
 
   deleteCard(cardID:number){
-    this.cardsservice.deleteCard(cardID).subscribe(response => {
-      console.log('Card deleted:', response)});
-
-      this.cardsservice.getCard().subscribe(data=>{
-        this.cardsservice.cardsList=data;})
+   this.cardsservice.deleteCard(cardID).subscribe((response) => {
+      console.log('Card deleted:', response);
+      this.cardsservice.getCard().subscribe((data) => {
+        this.cardsservice.cardsList = data;
+      });
+    });
       
   }
 
